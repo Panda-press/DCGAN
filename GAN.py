@@ -13,7 +13,7 @@ print("Num GPUs Available: ", len(tf.config.experimental.list_physical_devices('
 BATCH_SIZE = 256
 BUFFER_SIZE = 60000
 
-checkpoint_prefix = "C:/Users/tyrre/Documents/.Coding prodjects/Tensorflow/MNIST GAN/Model Checkpoints/Model"
+checkpoint_prefix = "file path/Model Checkpoints/Model"
 
 EPOCHS = 100000
 noise_dim = 100
@@ -138,7 +138,7 @@ def generate_and_save_images(model, epoch, test_input):
     plt.imshow(predictions[i, :, :, 0] * 127.5 + 127.5, cmap="gray")
     plt.axis("off")
   
-  plt.savefig("C:/Users/tyrre/Documents/.Coding prodjects/Tensorflow/MNIST GAN/Epoch results/image_at_epoch_{:04d}.png".format(epoch))
+  plt.savefig("file path/Epoch results/image_at_epoch_{:04d}.png".format(epoch))
   #plt.show()
 
 
